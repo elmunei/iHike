@@ -8,20 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		853179231FA0DF56001FCA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853179221FA0DF56001FCA57 /* AppDelegate.swift */; };
-		853179251FA0DF56001FCA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853179241FA0DF56001FCA57 /* ViewController.swift */; };
+		853179251FA0DF56001FCA57 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853179241FA0DF56001FCA57 /* InitialVC.swift */; };
 		853179281FA0DF56001FCA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853179261FA0DF56001FCA57 /* Main.storyboard */; };
 		8531792A1FA0DF56001FCA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853179291FA0DF56001FCA57 /* Assets.xcassets */; };
 		8531792D1FA0DF56001FCA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8531792B1FA0DF56001FCA57 /* LaunchScreen.storyboard */; };
+		857B00F81FA25794008FDBB7 /* RequestLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857B00F71FA25794008FDBB7 /* RequestLocationVC.swift */; };
+		857B00FA1FA33D07008FDBB7 /* InterestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857B00F91FA33D07008FDBB7 /* InterestsVC.swift */; };
+		8588A78F1FA1450000828722 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8588A78B1FA144F800828722 /* Quicksand-Bold.ttf */; };
+		8588A7901FA1450000828722 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8588A78C1FA144FF00828722 /* Quicksand-Medium.ttf */; };
+		8588A7911FA1450000828722 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8588A78D1FA144FF00828722 /* Quicksand-Light.ttf */; };
+		8588A7921FA1450000828722 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8588A78E1FA1450000828722 /* Quicksand-Regular.ttf */; };
+		8588A7971FA1464500828722 /* CustomizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8588A7941FA1464400828722 /* CustomizableButton.swift */; };
+		8588A7981FA1464500828722 /* CustomizableTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8588A7951FA1464500828722 /* CustomizableTextfield.swift */; };
+		8588A7991FA1464500828722 /* CustomizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8588A7961FA1464500828722 /* CustomizableView.swift */; };
+		8588A79B1FA1EF7000828722 /* ETRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8588A79A1FA1EF7000828722 /* ETRadioButton.swift */; };
+		ED112E81B238B9C8866C37C5 /* Pods_iHike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E069790BA2F243D1FEAEDE8 /* Pods_iHike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E069790BA2F243D1FEAEDE8 /* Pods_iHike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBC8424A4C3A04CC7C875CB /* Pods-iHike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHike/Pods-iHike.debug.xcconfig"; sourceTree = "<group>"; };
 		8531791F1FA0DF56001FCA57 /* iHike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853179221FA0DF56001FCA57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		853179241FA0DF56001FCA57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		853179241FA0DF56001FCA57 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		853179271FA0DF56001FCA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		853179291FA0DF56001FCA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8531792C1FA0DF56001FCA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8531792E1FA0DF56001FCA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857B00F71FA25794008FDBB7 /* RequestLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationVC.swift; sourceTree = "<group>"; };
+		857B00F91FA33D07008FDBB7 /* InterestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsVC.swift; sourceTree = "<group>"; };
+		8588A78B1FA144F800828722 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		8588A78C1FA144FF00828722 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		8588A78D1FA144FF00828722 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		8588A78E1FA1450000828722 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		8588A7941FA1464400828722 /* CustomizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableButton.swift; sourceTree = "<group>"; };
+		8588A7951FA1464500828722 /* CustomizableTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableTextfield.swift; sourceTree = "<group>"; };
+		8588A7961FA1464500828722 /* CustomizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableView.swift; sourceTree = "<group>"; };
+		8588A79A1FA1EF7000828722 /* ETRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETRadioButton.swift; sourceTree = "<group>"; };
+		F33792358555711AD12760CD /* Pods-iHike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHike.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHike/Pods-iHike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED112E81B238B9C8866C37C5 /* Pods_iHike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		056EB2C2F0325C8DD7D6127B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E069790BA2F243D1FEAEDE8 /* Pods_iHike.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AD313A247D9D792B31A43C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CBC8424A4C3A04CC7C875CB /* Pods-iHike.debug.xcconfig */,
+				F33792358555711AD12760CD /* Pods-iHike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		853179161FA0DF56001FCA57 = {
 			isa = PBXGroup;
 			children = (
 				853179211FA0DF56001FCA57 /* iHike */,
 				853179201FA0DF56001FCA57 /* Products */,
+				2AD313A247D9D792B31A43C5 /* Pods */,
+				056EB2C2F0325C8DD7D6127B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +98,48 @@
 		853179211FA0DF56001FCA57 /* iHike */ = {
 			isa = PBXGroup;
 			children = (
+				8588A7931FA1462300828722 /* Custom */,
+				8588A78A1FA144B300828722 /* Fonts */,
 				853179221FA0DF56001FCA57 /* AppDelegate.swift */,
-				853179241FA0DF56001FCA57 /* ViewController.swift */,
+				857B00F61FA25763008FDBB7 /* Gateway */,
 				853179261FA0DF56001FCA57 /* Main.storyboard */,
 				853179291FA0DF56001FCA57 /* Assets.xcassets */,
 				8531792B1FA0DF56001FCA57 /* LaunchScreen.storyboard */,
 				8531792E1FA0DF56001FCA57 /* Info.plist */,
 			);
 			path = iHike;
+			sourceTree = "<group>";
+		};
+		857B00F61FA25763008FDBB7 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				853179241FA0DF56001FCA57 /* InitialVC.swift */,
+				857B00F71FA25794008FDBB7 /* RequestLocationVC.swift */,
+				857B00F91FA33D07008FDBB7 /* InterestsVC.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		8588A78A1FA144B300828722 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8588A78B1FA144F800828722 /* Quicksand-Bold.ttf */,
+				8588A78D1FA144FF00828722 /* Quicksand-Light.ttf */,
+				8588A78C1FA144FF00828722 /* Quicksand-Medium.ttf */,
+				8588A78E1FA1450000828722 /* Quicksand-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8588A7931FA1462300828722 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				8588A7941FA1464400828722 /* CustomizableButton.swift */,
+				8588A7951FA1464500828722 /* CustomizableTextfield.swift */,
+				8588A7961FA1464500828722 /* CustomizableView.swift */,
+				8588A79A1FA1EF7000828722 /* ETRadioButton.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 853179311FA0DF56001FCA57 /* Build configuration list for PBXNativeTarget "iHike" */;
 			buildPhases = (
+				901BF96E675230F0827B6607 /* [CP] Check Pods Manifest.lock */,
 				8531791B1FA0DF56001FCA57 /* Sources */,
 				8531791C1FA0DF56001FCA57 /* Frameworks */,
 				8531791D1FA0DF56001FCA57 /* Resources */,
+				525E2F957BD2518E05DC5EE8 /* [CP] Embed Pods Frameworks */,
+				01B6C1387B54D547E83949BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,19 +206,140 @@
 			files = (
 				8531792D1FA0DF56001FCA57 /* LaunchScreen.storyboard in Resources */,
 				8531792A1FA0DF56001FCA57 /* Assets.xcassets in Resources */,
+				8588A7921FA1450000828722 /* Quicksand-Regular.ttf in Resources */,
 				853179281FA0DF56001FCA57 /* Main.storyboard in Resources */,
+				8588A7911FA1450000828722 /* Quicksand-Light.ttf in Resources */,
+				8588A78F1FA1450000828722 /* Quicksand-Bold.ttf in Resources */,
+				8588A7901FA1450000828722 /* Quicksand-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B6C1387B54D547E83949BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iHike/Pods-iHike-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iHike/Pods-iHike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		525E2F957BD2518E05DC5EE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iHike/Pods-iHike-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BWWalkthrough/BWWalkthrough.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/DTPagerController/DTPagerController.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IDMPhotoBrowser/IDMPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/IQAudioRecorderController/IQAudioRecorderController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ListPlaceholder/ListPlaceholder.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MRArticleViewController/MRArticleViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SCSiriWaveformView/SCSiriWaveformView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BWWalkthrough.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTPagerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDMPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQAudioRecorderController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ListPlaceholder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRArticleViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSiriWaveformView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iHike/Pods-iHike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		901BF96E675230F0827B6607 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iHike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8531791B1FA0DF56001FCA57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853179251FA0DF56001FCA57 /* ViewController.swift in Sources */,
+				853179251FA0DF56001FCA57 /* InitialVC.swift in Sources */,
+				8588A7991FA1464500828722 /* CustomizableView.swift in Sources */,
+				857B00F81FA25794008FDBB7 /* RequestLocationVC.swift in Sources */,
+				8588A79B1FA1EF7000828722 /* ETRadioButton.swift in Sources */,
+				8588A7981FA1464500828722 /* CustomizableTextfield.swift in Sources */,
 				853179231FA0DF56001FCA57 /* AppDelegate.swift in Sources */,
+				857B00FA1FA33D07008FDBB7 /* InterestsVC.swift in Sources */,
+				8588A7971FA1464500828722 /* CustomizableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +474,7 @@
 		};
 		853179321FA0DF56001FCA57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBC8424A4C3A04CC7C875CB /* Pods-iHike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +490,7 @@
 		};
 		853179331FA0DF56001FCA57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33792358555711AD12760CD /* Pods-iHike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
