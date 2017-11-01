@@ -66,7 +66,7 @@ class FacebookLogin: UIViewController {
                             //do only when user is not registered yet
                             self.createFirebaseUserFromFacebook(withBlock: { (result, avatarImage) in
                                 
-                                let fUser = FUser(_objectId: firuser!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _email: firuser!.email!, _username: result["name"] as! String, _fullname: result["name"] as! String, _avatar: avatarImage,_location: " " , _loginMethod: kFACEBOOK, _friends: [])
+                                let fUser = FUser(_objectId: firuser!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _email: firuser!.email!, _username: result["name"] as! String, _fullname: result["name"] as! String, _avatar: avatarImage,_location: "" ,_interests: [" "], _loginMethod: kFACEBOOK, _friends: [])
                                 
                                 saveUserLocally(fUser: fUser)
                                 saveUserInBsckground(fUser: fUser, completion: { (error) in
@@ -90,7 +90,10 @@ class FacebookLogin: UIViewController {
                                 if success {
                                     
                                     ProgressHUD.dismiss()
-                                    self.goToApp()
+                                    //go to app
+                                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+                                    
+                                    self.present(vc, animated: true, completion: nil)
                                 }
                                 
                             })
@@ -172,7 +175,7 @@ class FacebookLogin: UIViewController {
         
         
         //go to app
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocationVC") as! RequestLocationVC
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UsernameVC") as! UsernameVC
         
         self.present(vc, animated: true, completion: nil)
         

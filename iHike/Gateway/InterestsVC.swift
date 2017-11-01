@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import Firebase
+import ProgressHUD
 
 class InterestsVC: UIViewController {
 
-    var interests = [String]()
+    var user: FUser!
+
+    
+    var interest1 = ""
+    var interest2 = ""
+    var interest3 = ""
+    var interest4 = ""
+
+    var userInterests: [String] = []
     
      // MARK: - Outlets
     
@@ -20,14 +30,16 @@ class InterestsVC: UIViewController {
         sender.isSelected = !sender.isSelected
         
         if (sender as AnyObject).isSelected {
-            interests = ["Trekker"]
-            
-           
+            interest1 = "Trekker"
+//            interests.append("Trekker")
+       
         } else{
-            interests = ["Not Selected"]
+            interest1 = ""
+
+//            interests.append("Not Selected")
         }
         
-        print(interests)
+        print(interest1)
     }
     
     @IBAction func bikerBtn(_ sender: ETRadioButton) {
@@ -35,13 +47,17 @@ class InterestsVC: UIViewController {
         sender.isSelected = !sender.isSelected
         
         if (sender as AnyObject).isSelected {
-            interests = ["Biker"]
+            interest2 = "Biker"
+
+//            interests.append("Biker")
             
         } else{
-            interests = ["Not Selected"]
+            interest2 = ""
+
+//            interests.append("Not Selected")
         }
         
-        print(interests)
+        print(interest2)
 
     }
     
@@ -51,12 +67,16 @@ class InterestsVC: UIViewController {
         sender.isSelected = !sender.isSelected
         
         if (sender as AnyObject).isSelected {
-            interests = ["Walker"]
+            interest3 = "Walker"
+
+//            interests.append("Walker")
         } else{
-            interests = ["Not Selected"]
+            interest3 = ""
+
+//            interests.append("Not Selected")
         }
         
-        print(interests)
+        print(interest3)
 
     }
     @IBAction func runnerBtn(_ sender: ETRadioButton) {
@@ -64,20 +84,24 @@ class InterestsVC: UIViewController {
         sender.isSelected = !sender.isSelected
         
         if (sender as AnyObject).isSelected {
-            interests = ["Runner"]
+            interest4 = "Runner"
+
+//            interests.append("Runner")
         } else{
-            interests = ["Not Selected"]
+            interest4 = ""
+
+//            interests.append("Not Selected")
         }
         
-        print(interests)
+        print(interest4)
 
     }
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print("Elvis: You are on Interests screen")
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,14 +110,42 @@ class InterestsVC: UIViewController {
     }
     
 
-    /*
+ 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func exploreBtn(_ sender: Any) {
+        
+        userInterests.append(interest1)
+        userInterests.append(interest2)
+        userInterests.append(interest3)
+        userInterests.append(interest4)
+        
+        
+        let newDate = dateFormatter().string(from: Date())
+        
+        updateUser(withValues: [kCURRENTUSERINTERESTS: userInterests, kUPDATEDAT: newDate]) { (success) in
+            
+            if success {
+                ProgressHUD.dismiss()
+                
+                self.user = FUser.currentUser()
+                self.view.endEditing(false)
+                
+                print("Elvis: Interests are \(String(describing: self.userInterests))")
+                
+                //Proceed to Location Screen
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RequestLocationVC") as! RequestLocationVC
+                
+                self.present(vc, animated: true, completion: nil)
+                
+            }
+            
+            
+        }
+
     }
-    */
+    
+ 
+    
 
 }

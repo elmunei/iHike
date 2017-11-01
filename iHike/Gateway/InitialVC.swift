@@ -8,27 +8,64 @@
 
 import UIKit
 import BWWalkthrough
+import Firebase
 
 
 class InitialVC: UIViewController, BWWalkthroughViewControllerDelegate {
     
+    var firstLoad: Bool?
     var needWalkthrough:Bool = true
     var walkthrough:BWWalkthroughViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presentWalkthrough()
+        Auth.auth().addStateDidChangeListener { auth, user in
+            
+            if user != nil {
+                
+                if userDefaults.object(forKey: kCURRENTUSER) != nil {
+                    
+                    DispatchQueue.main.async {
 
-        // Do any additional setup after loading the view, typically from a nib.
+                        self.goToApp()
+                        
+                    }
+                }
+                
+            } else {
+                
+
+                print("User is signed out.")
+            }
+        }
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        if needWalkthrough {
-            self.presentWalkthrough()
-        }
-    }
+        if userDefaults.object(forKey: kCURRENTUSER) != nil {
+            print("ELVIS: User is signed in. So it's the main screen")
 
+            DispatchQueue.main.async {
+                
+                self.goToApp()
+                
+            }
+        
+        
+    } else {
+    
+    self.presentWalkthrough()
+            
+            print("ELVIS: User is signed out. So it's the first screen")
+    
+
+
+//        if needWalkthrough {
+//            self.presentWalkthrough()
+//        }
+    }
+    }
 
     override var prefersStatusBarHidden: Bool{
         
@@ -57,7 +94,37 @@ class InitialVC: UIViewController, BWWalkthroughViewControllerDelegate {
         }
     }
 
+    func goToApp() {
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UserDidLoginNotification"), object: nil, userInfo: ["userId" : FUser.currentId()])
+        
+        
+        //go to app
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        
+        present(vc, animated: true, completion: nil)
+        
+    }
     
+    
+    //firstRun check
+    func setUserDefaults() {
+        
+        firstLoad = userDefaults.bool(forKey: kFIRSTRUN)
+        
+        if !firstLoad! {
+            
+            userDefaults.set(true, forKey: kFIRSTRUN)
+            userDefaults.set(true, forKey: kAVATARSTATE)
+            
+            userDefaults.set(1.0, forKey: kRED)
+            userDefaults.set(1.0, forKey: kGREEN)
+            userDefaults.set(1.0, forKey: kBLUE)
+            
+            userDefaults.synchronize()
+        }
+        
+    }
 }
 
 extension InitialVC{

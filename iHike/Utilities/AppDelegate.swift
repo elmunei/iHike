@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Facebook
          FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        
+        
+        
         return true
     }
 

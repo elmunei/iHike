@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851627201FA7CB3D001C3321 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516271F1FA7CB3D001C3321 /* HomeViewController.swift */; };
 		853179231FA0DF56001FCA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853179221FA0DF56001FCA57 /* AppDelegate.swift */; };
 		853179251FA0DF56001FCA57 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853179241FA0DF56001FCA57 /* InitialVC.swift */; };
 		853179281FA0DF56001FCA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853179261FA0DF56001FCA57 /* Main.storyboard */; };
 		8531792A1FA0DF56001FCA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853179291FA0DF56001FCA57 /* Assets.xcassets */; };
 		8531792D1FA0DF56001FCA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8531792B1FA0DF56001FCA57 /* LaunchScreen.storyboard */; };
+		853FD5531FA72F3E00BC7BA5 /* UsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FD5521FA72F3E00BC7BA5 /* UsernameVC.swift */; };
 		857B00F81FA25794008FDBB7 /* RequestLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857B00F71FA25794008FDBB7 /* RequestLocationVC.swift */; };
 		857B00FA1FA33D07008FDBB7 /* InterestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857B00F91FA33D07008FDBB7 /* InterestsVC.swift */; };
 		8588A78F1FA1450000828722 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8588A78B1FA144F800828722 /* Quicksand-Bold.ttf */; };
@@ -31,12 +33,14 @@
 		85969F7D1FA4CC260030C366 /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85969F701FA4C21A0030C366 /* Recent.swift */; };
 		85969F7E1FA4CC260030C366 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85969F6D1FA4C2190030C366 /* Utilities.swift */; };
 		85969F801FA4CF270030C366 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85969F7F1FA4CD150030C366 /* GoogleService-Info.plist */; };
+		85E10A6A1FA8952900177650 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E10A691FA8952900177650 /* ProfileViewController.swift */; };
 		ED112E81B238B9C8866C37C5 /* Pods_iHike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E069790BA2F243D1FEAEDE8 /* Pods_iHike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E069790BA2F243D1FEAEDE8 /* Pods_iHike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBC8424A4C3A04CC7C875CB /* Pods-iHike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHike/Pods-iHike.debug.xcconfig"; sourceTree = "<group>"; };
+		8516271F1FA7CB3D001C3321 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8531791F1FA0DF56001FCA57 /* iHike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853179221FA0DF56001FCA57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853179241FA0DF56001FCA57 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 		853179291FA0DF56001FCA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8531792C1FA0DF56001FCA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8531792E1FA0DF56001FCA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853FD5521FA72F3E00BC7BA5 /* UsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameVC.swift; sourceTree = "<group>"; };
 		857B00F71FA25794008FDBB7 /* RequestLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationVC.swift; sourceTree = "<group>"; };
 		857B00F91FA33D07008FDBB7 /* InterestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsVC.swift; sourceTree = "<group>"; };
 		8588A78B1FA144F800828722 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		85969F721FA4C6390030C366 /* iHike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHike-Bridging-Header.h"; sourceTree = "<group>"; };
 		85969F761FA4C6670030C366 /* FacebookLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLogin.swift; sourceTree = "<group>"; };
 		85969F7F1FA4CD150030C366 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85E10A691FA8952900177650 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F33792358555711AD12760CD /* Pods-iHike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHike.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHike/Pods-iHike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,13 +126,14 @@
 				85969F6A1FA4C1F50030C366 /* Utilities */,
 				8588A7931FA1462300828722 /* Custom */,
 				8588A78A1FA144B300828722 /* Fonts */,
-				853179221FA0DF56001FCA57 /* AppDelegate.swift */,
 				857B00F61FA25763008FDBB7 /* Gateway */,
 				853179261FA0DF56001FCA57 /* Main.storyboard */,
 				853179291FA0DF56001FCA57 /* Assets.xcassets */,
 				8531792B1FA0DF56001FCA57 /* LaunchScreen.storyboard */,
 				8531792E1FA0DF56001FCA57 /* Info.plist */,
 				85969F7F1FA4CD150030C366 /* GoogleService-Info.plist */,
+				8516271F1FA7CB3D001C3321 /* HomeViewController.swift */,
+				85E10A691FA8952900177650 /* ProfileViewController.swift */,
 			);
 			path = iHike;
 			sourceTree = "<group>";
@@ -134,9 +141,11 @@
 		857B00F61FA25763008FDBB7 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
+				85969F761FA4C6670030C366 /* FacebookLogin.swift */,
 				853179241FA0DF56001FCA57 /* InitialVC.swift */,
 				857B00F71FA25794008FDBB7 /* RequestLocationVC.swift */,
 				857B00F91FA33D07008FDBB7 /* InterestsVC.swift */,
+				853FD5521FA72F3E00BC7BA5 /* UsernameVC.swift */,
 			);
 			path = Gateway;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 		85969F6A1FA4C1F50030C366 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				853179221FA0DF56001FCA57 /* AppDelegate.swift */,
 				85969F6C1FA4C2180030C366 /* Camera.swift */,
 				85969F6E1FA4C2190030C366 /* Constants.swift */,
 				85969F711FA4C21A0030C366 /* Download.swift */,
@@ -174,7 +184,6 @@
 				85969F701FA4C21A0030C366 /* Recent.swift */,
 				85969F6D1FA4C2190030C366 /* Utilities.swift */,
 				85969F721FA4C6390030C366 /* iHike-Bridging-Header.h */,
-				85969F761FA4C6670030C366 /* FacebookLogin.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -376,11 +385,14 @@
 				8588A7991FA1464500828722 /* CustomizableView.swift in Sources */,
 				857B00F81FA25794008FDBB7 /* RequestLocationVC.swift in Sources */,
 				8588A79B1FA1EF7000828722 /* ETRadioButton.swift in Sources */,
+				851627201FA7CB3D001C3321 /* HomeViewController.swift in Sources */,
 				8588A7981FA1464500828722 /* CustomizableTextfield.swift in Sources */,
 				85969F7E1FA4CC260030C366 /* Utilities.swift in Sources */,
 				85969F781FA4CC170030C366 /* FUser.swift in Sources */,
+				85E10A6A1FA8952900177650 /* ProfileViewController.swift in Sources */,
 				85969F7C1FA4CC260030C366 /* Group.swift in Sources */,
 				853179231FA0DF56001FCA57 /* AppDelegate.swift in Sources */,
+				853FD5531FA72F3E00BC7BA5 /* UsernameVC.swift in Sources */,
 				857B00FA1FA33D07008FDBB7 /* InterestsVC.swift in Sources */,
 				85969F771FA4C6670030C366 /* FacebookLogin.swift in Sources */,
 				8588A7971FA1464500828722 /* CustomizableButton.swift in Sources */,

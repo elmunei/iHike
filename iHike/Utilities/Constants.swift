@@ -15,9 +15,9 @@ var firebase = Database.database().reference()
 let userDefaults = UserDefaults.standard
 
 //IDS and Keys
-public let kONESIGNALAPPID = "cc0a00c0-55fc-4b11-bd98-60b1bb6b548d"
-public let kSINCHKEY = "e4353417-067c-43a2-8100-57b0eb8b8e15"
-public let kSINCHSECRET = "LGMw6Zds/kKk6eqbAUMZcg=="
+public let kONESIGNALAPPID = ""
+public let kSINCHKEY = ""
+public let kSINCHSECRET = ""
 
 //FUser
 public let kOBJECTID = "objectId"
@@ -35,13 +35,14 @@ public let kUSERNAME = "username"
 public let kAVATAR = "avatar"
 public let kCURRENTUSER = "currentUser"
 public let kCURRENTUSERLOCATION = "userlocation"
+public let kCURRENTUSERINTERESTS = "userinterests"
 
 //typeing
 public let kTYPINGPATH = "Typing"
 
 //
 public let kAVATARSTATE = "avatarState"
-public let kFILEREFERENCE = "gs://andika-8620et.appspot.com"
+public let kFILEREFERENCE = "gs://ihike-d1dfb.appspot.com"
 public let kFIRSTRUN = "firstRun"
 public let kNUMBEROFMESSAGES = 40
 public let kMAXDURATION = 5.0

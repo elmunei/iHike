@@ -25,13 +25,14 @@ class FUser {
     var username: String
     var avatar: String
     var location: String
+    var interests: [String]
     var friends: [String]
     
     let loginMethod: String
     
     //MARK: Initializers
     
-    init(_objectId: String, _pushId: String?, _createdAt: Date, _updatedAt: Date, _email: String,_username: String, _fullname: String, _avatar: String = "",_location: String, _loginMethod: String, _friends: [String]) {
+    init(_objectId: String, _pushId: String?, _createdAt: Date, _updatedAt: Date, _email: String,_username: String, _fullname: String, _avatar: String = "",_location: String,_interests: [String], _loginMethod: String, _friends: [String]) {
         
         objectId = _objectId
         pushId = _pushId
@@ -44,6 +45,7 @@ class FUser {
         fullname = _fullname
         avatar = _avatar
         location = _location
+        interests = _interests
         friends = _friends
         
         loginMethod = _loginMethod
@@ -62,8 +64,11 @@ class FUser {
         username = _dictionary[kUSERNAME] as! String
         fullname = _dictionary[kFULLNAME] as! String
         location = _dictionary[kCURRENTUSERLOCATION] as! String
+        interests = _dictionary[kCURRENTUSERINTERESTS] as! [String]
         avatar = _dictionary[kAVATAR] as! String
         
+        
+   
         
         if let friend = _dictionary[kFRIEND] {
             
@@ -137,7 +142,7 @@ class FUser {
     
     //MARK: Register functions
     
-    class func registerUserWith(email: String, password: String, fullname: String, username: String, location: String, avatar: String = "", withBlock: @escaping (_ success: Bool) -> Void) {
+    class func registerUserWith(email: String, password: String, fullname: String, username: String, location: String,interests: [String], avatar: String = "", withBlock: @escaping (_ success: Bool) -> Void) {
         
         Auth.auth().createUser(withEmail: email, password: password, completion: { (firuser, error) in
             
@@ -153,7 +158,7 @@ class FUser {
                 return
             }
             
-            let fUser = FUser(_objectId: firuser!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _email: firuser!.email!, _username: username, _fullname: fullname, _avatar: avatar,_location: location, _loginMethod: kEMAIL, _friends: [])
+            let fUser = FUser(_objectId: firuser!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _email: firuser!.email!, _username: username, _fullname: fullname, _avatar: avatar,_location: location,_interests: interests, _loginMethod: kEMAIL, _friends: [])
             
             
             print(fullname)
@@ -256,7 +261,7 @@ func userDictionaryFrom(user: FUser) -> NSDictionary {
     let createdAt = dateFormatter().string(from: user.createdAt)
     let updatedAt = dateFormatter().string(from: user.updatedAt)
     
-    return NSDictionary(objects: [user.objectId,  createdAt, updatedAt, user.email, user.loginMethod, user.pushId!, user.username, user.fullname, user.avatar,user.location, user.friends], forKeys: [kOBJECTID as NSCopying, kCREATEDAT as NSCopying, kUPDATEDAT as NSCopying, kEMAIL as NSCopying, kLOGINMETHOD as NSCopying, kPUSHID as NSCopying, kUSERNAME as NSCopying, kFULLNAME as NSCopying, kAVATAR as NSCopying,kCURRENTUSERLOCATION as NSCopying, kFRIEND as NSCopying])
+    return NSDictionary(objects: [user.objectId,  createdAt, updatedAt, user.email, user.loginMethod, user.pushId!, user.username, user.fullname, user.avatar,user.location,user.interests, user.friends], forKeys: [kOBJECTID as NSCopying, kCREATEDAT as NSCopying, kUPDATEDAT as NSCopying, kEMAIL as NSCopying, kLOGINMETHOD as NSCopying, kPUSHID as NSCopying, kUSERNAME as NSCopying, kFULLNAME as NSCopying, kAVATAR as NSCopying,kCURRENTUSERLOCATION as NSCopying,kCURRENTUSERINTERESTS as NSCopying, kFRIEND as NSCopying])
     
 }
 
